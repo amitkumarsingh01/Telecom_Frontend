@@ -1,14 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+// import AdminDashboard from './components/dashboard/AdminDashboard';
+// import AgentDashboard from './components/dashboard/AgentDashboard';
+// import TeleCallerDashboard from './components/dashboard/TeleCallerDashboard';
+// import PrivateRoute from './components/auth/PrivateRoute';
+// import { AuthProvider } from './context/AuthContext';
+import Dashboard from './components/dashboard/dashboard';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Navbar from './components/layout/Navbar';
+import PrivateRoute from './components/auth/PrivateRoute';
 import AdminDashboard from './components/dashboard/AdminDashboard';
 import AgentDashboard from './components/dashboard/AgentDashboard';
-import TeleCallerDashboard from './components/dashboard/TeleCallerDashboard';
-import PrivateRoute from './components/auth/PrivateRoute';
+import TeleCallerDashboard from './components/dashboard/TelecallerDashboard';
 import { AuthProvider } from './context/AuthContext';
-import Navbar from './components/layout/Navbar';
-import Dashboard from './components/dashboard/dashboard';
 
 function App() {
   return (
