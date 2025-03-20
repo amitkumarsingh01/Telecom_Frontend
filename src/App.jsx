@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Dashboard from './components/dashboard/Dashboard';
 import AdminDashboard from './components/dashboard/AdminDashboard';
 import AgentDashboard from './components/dashboard/AgentDashboard';
 import TeleCallerDashboard from './components/dashboard/TeleCallerDashboard';
 import PrivateRoute from './components/auth/PrivateRoute';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/layout/Navbar';
+import Dashboard from './components/dashboard/dashboard';
 
 function App() {
   return (
