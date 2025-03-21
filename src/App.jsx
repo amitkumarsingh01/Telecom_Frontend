@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 // import TeleCallerDashboard from './components/dashboard/TeleCallerDashboard';
 // import PrivateRoute from './components/auth/PrivateRoute';
 // import { AuthProvider } from './context/AuthContext';
+import background from "./assets/background.jpg";
 import Dashboard from './components/dashboard/dashboard';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
