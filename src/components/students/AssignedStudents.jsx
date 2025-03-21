@@ -175,7 +175,7 @@ const AssignedStudents = () => {
   
   const handleWhatsApp = (student) => {
     const message = encodeURIComponent(`Hi ${student.name}, we are contacting you from JST regarding your application. Please let us know if you have any questions.`);
-    window.open(`https://wa.me/${student.phone.replace(/\D/g, '')}?text=${message}`);
+    window.open(`https://wa.me/+91${student.phone.replace(/\D/g, '')}?text=${message}`);
   };
   
   const handleSMS = (student) => {

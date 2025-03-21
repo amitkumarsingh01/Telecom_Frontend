@@ -27,12 +27,15 @@ const AssignStudents = () => {
       });
       
       // Filter unassigned students
-      setStudents(studentsResponse.data.filter(s => !s.assignedTo));
+      // setStudents(studentsResponse.data.filter(s => !s.assignedTo));
+      setStudents(studentsResponse.data.filter(s => !s.assignedTo && s.status !== 'approved' && s.status !== 'rejected'));
+
       
-      // Filter pending students (assigned but not accepted/rejected)
+      // Filter pending students (assigned but not approved/rejected)
       setPendingStudents(studentsResponse.data.filter(s => 
-        s.assignedTo && s.status !== 'accepted' && s.status !== 'rejected'
+        s.assignedTo && s.status !== 'approved' && s.status !== 'rejected'
       ));
+      
       
     } catch (err) {
       setError('Error fetching student data: ' + (err.response?.data?.error || err.message));
@@ -351,7 +354,8 @@ const AssignStudents = () => {
               <option value="">Select a telecaller</option>
               {telecallers.map(telecaller => (
                 <option key={telecaller._id} value={telecaller._id}>
-                  {telecaller.username} (Currently Assigned: {telecaller.assignedCount})
+                  {telecaller.username} 
+                  {/* (Currently Assigned: {telecaller.assignedCount}) */}
                 </option>
               ))}
             </select>

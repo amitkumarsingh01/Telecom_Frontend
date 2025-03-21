@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import logo from '../../assets/logo.png';
-
+import logo1 from '../../assets/logo1.png';
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Telecom CRM Logo" className="h-8 mr-2" />
+            <img src={logo1} alt="Telecom CRM Logo" className="h-8 mr-2" />
             <span className="text-xl font-bold">Tele Link Pro</span>
           </Link>
           
