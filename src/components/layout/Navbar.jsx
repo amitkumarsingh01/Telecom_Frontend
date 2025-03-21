@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="hidden md:flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Telecom CRM Logo" className="h-8 mr-2" />
-            <span className="text-xl font-bold">Telecom CRM</span>
+            <span className="text-xl font-bold">Tele Link Pro</span>
           </Link>
           
           <div className="flex items-center">
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="flex md:hidden justify-between items-center">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Telecom CRM Logo" className="h-7 mr-2" />
-            <span className="text-lg font-bold">Telecom CRM</span>
+            <span className="text-lg font-bold">Tele Link Pro</span>
           </Link>
 
           {/* Menu Button */}
