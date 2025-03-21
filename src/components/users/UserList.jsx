@@ -49,7 +49,7 @@ const UserList = () => {
               <tr className="bg-gray-100 text-gray-700 uppercase text-sm leading-normal">
                 <th className="py-3 px-6 text-left">Username</th>
                 <th className="py-3 px-6 text-left">Role</th>
-                <th className="py-3 px-6 text-left">Assigned Students</th>
+                {/* <th className="py-3 px-6 text-left">Assigned Students</th> */}
               </tr>
             </thead>
             <tbody className="text-gray-600 text-sm">
@@ -66,9 +66,9 @@ const UserList = () => {
                       {u.userType}
                     </span>
                   </td>
-                  <td className="py-3 px-6 text-left">
+                  {/* <td className="py-3 px-6 text-left">
                     {u.userType === 'TeleCaller' ? u.assignedCount : '-'}
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
