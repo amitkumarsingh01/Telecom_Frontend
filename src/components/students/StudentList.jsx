@@ -152,7 +152,7 @@ const StudentList = () => {
       <h2 className="text-xl font-bold mb-4">Student List</h2>
       
       {/* Status Counts */}
-      <div className="grid grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-gray-100 p-4 rounded-lg text-center">
           <div className="text-2xl font-bold">{statusCounts.total}</div>
           <div className="text-gray-600">Total</div>
@@ -170,7 +170,7 @@ const StudentList = () => {
           <div className="text-red-800">Rejected</div>
         </div>
       </div>
-      
+
       {/* Filter section */}
       <div className="mb-6 p-4 bg-gray-50 rounded-lg">
         <h3 className="text-lg font-semibold mb-3">Filters</h3>
